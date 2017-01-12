@@ -10,16 +10,14 @@ __________.__          ___________.__  .__       .__
 
 Provides the ability to generate revision hashes on files in a specified files or folder.
 
-### Paths
 
-Paths lets you declare path constants that can be used in your other tasks.
+### SASS
+
+Processes and compiles a *.scss file and outputs it to specified path.
+
+Formatted as: {SOURCE_FILE_PATH}: {DESTINATION_FILE_PATH}
 
 ```yaml
-paths:
-    PATH_SASS: resources/assets/sass
-    PATH_BOWER: bower_components
-    PATH_PUBLIC_ASSETS: public/assets
-    PATH_PUBLIC_BUILD: public/build
-    PATH_RESOURCES: resources
-    PATH_RES_ASSET_IMAGES: resources/assets/images
+sass:
+    PATH_SASS + /app.scss: PATH_PUBLIC_ASSETS + /vendor/app.css
 ```
